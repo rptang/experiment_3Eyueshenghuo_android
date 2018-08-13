@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zyzs.ewin.experiment_3eyueshenghuo.activity.MainActivity">
+
+    <!--导航栏-->
+    <RelativeLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:background="@color/c_3D3D3D"
+        android:layout_height="88px">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="三意悦生活Demo"
+            android:textColor="@color/white"
+            android:textSize="46px" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11px"
+            android:background="@null"
+            android:scaleType="center"
+            android:visibility="gone"
+            android:src="@drawable/click_back_bg" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_EFEFF4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--卡片式轮播-->
+            <LinearLayout
+                android:id="@+id/ll_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="98px"
+                android:background="@drawable/r0cfff_be1cdcdcdc"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="卡片式轮播"
+                        android:textColor="@color/c_646464"
+                        android:textSize="40px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_about_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:src="@drawable/click_about_version_bg"
+                        android:paddingRight="24px"
+                        android:scaleType="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--H5页面-->
+            <LinearLayout
+                android:id="@+id/ll_H5ActiveActivity"
+                android:layout_width="match_parent"
+                android:layout_height="98px"
+                android:background="@drawable/r0cfff_be1cdcdcdc"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="H5Activity"
+                        android:textColor="@color/c_646464"
+                        android:textSize="40px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_about_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:src="@drawable/click_about_version_bg"
+                        android:paddingRight="24px"
+                        android:scaleType="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--头部导航栏随ScrollView滚动颜色变化-->
+            <LinearLayout
+                android:id="@+id/ll_Home_Activity"
+                android:layout_width="match_parent"
+                android:layout_height="98px"
+                android:background="@drawable/r0cfff_be1cdcdcdc"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="首页"
+                        android:textColor="@color/c_646464"
+                        android:textSize="40px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:src="@drawable/click_about_version_bg"
+                        android:paddingRight="24px"
+                        android:scaleType="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--设置快捷方式-->
+            <LinearLayout
+                android:id="@+id/ll_ShortCut_Activity"
+                android:layout_width="match_parent"
+                android:layout_height="98px"
+                android:background="@drawable/r0cfff_be1cdcdcdc"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="快捷方式"
+                        android:textColor="@color/c_646464"
+                        android:textSize="40px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_shortcut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:src="@drawable/click_about_version_bg"
+                        android:paddingRight="24px"
+                        android:scaleType="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--SwipeRefreshLayout下拉刷新上拉加载-->
+            <LinearLayout
+                android:id="@+id/ll_SwipeRefreshLayout_Activity"
+                android:layout_width="match_parent"
+                android:layout_height="98px"
+                android:background="@drawable/r0cfff_be1cdcdcdc"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="SwipeRefreshLayout"
+                        android:textColor="@color/c_646464"
+                        android:textSize="40px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_SwipeRefreshLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:src="@drawable/click_about_version_bg"
+                        android:paddingRight="24px"
+                        android:scaleType="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

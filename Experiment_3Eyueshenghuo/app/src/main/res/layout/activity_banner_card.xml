@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_3D3D3D"
+    tools:context="com.zyzs.ewin.experiment_3eyueshenghuo.activity.BannerCardActivity">
+
+    <!--导航栏-->
+    <RelativeLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:background="@color/c_3D3D3D"
+        android:layout_height="88px">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="卡片轮播"
+            android:textColor="@color/white"
+            android:textSize="46px" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11px"
+            android:background="@null"
+            android:scaleType="center"
+            android:src="@drawable/click_back_bg" />
+
+    </RelativeLayout>
+
+    <com.zyzs.ewin.experiment_3eyueshenghuo.widget.mzbanner.MZBannerView
+        android:id="@+id/banner"
+        android:layout_below="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        app:open_mz_mode="true"
+        app:middle_page_cover="false"
+        app:canLoop="true"
+        app:indicatorAlign="center"/>
+
+</RelativeLayout>

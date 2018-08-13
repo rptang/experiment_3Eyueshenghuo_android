@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zyzs.ewin.experiment_3eyueshenghuo.widget.MyScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zyzs.ewin.experiment_3eyueshenghuo.widget.mzbanner.MZBannerView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:canLoop="true"
+                app:indicatorAlign="center"
+                app:open_mz_mode="false" />
+
+            <LinearLayout
+                android:id="@+id/ll_title_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2c5aff"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/v_title_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:text="状\n态\n改\n变"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:background="#b5f581"
+                android:gravity="center"
+                android:text="内\n容\n区\n域"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </com.zyzs.ewin.experiment_3eyueshenghuo.widget.MyScrollView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <!--首页-->
+        <RelativeLayout
+            android:id="@+id/navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="88px">
+
+            <View
+                android:id="@+id/bg_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/c_3D3D3D"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="首页"
+                android:textColor="@color/white"
+                android:textSize="46px" />
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11px"
+                android:background="@null"
+                android:scaleType="center"
+                android:src="@drawable/click_back_bg" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
